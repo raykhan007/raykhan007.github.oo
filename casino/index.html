@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Casino Royale - Win Big!</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        /* General body styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1d;
+            color: #ffffff;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #e5c100;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            color: #e5c100;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+            color: #f1f1f1;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: #e5c100;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Main content area */
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* Game card design */
+        .game-card {
+            background-color: #282828;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            border-radius: 10px;
+            border: 3px solid #e5c100;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .game-card h2 {
+            color: #e5c100;
+            margin-bottom: 10px;
+        }
+
+        .game-card p {
+            color: #d3d3d3;
+            margin-bottom: 20px;
+        }
+
+        .game-card button {
+            background-color: #e5c100;
+            color: #111;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .game-card button:hover {
+            background-color: #ffd700;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #111;
+            padding: 20px;
+            text-align: center;
+            border-top: 5px solid #e5c100;
+        }
+
+        footer p {
+            color: #e5c100;
+        }
+
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 768px) {
+            .game-card {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .game-card {
+                width: 100%;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Casino Royale</h1>
+        <p>Where fortunes are made and dreams come true!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="login.html">Games</a>
+        <a href="login.html">Promotions</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
+
+    <!-- Main Content: Games Section -->
+    <section class="main-content" id="games">
+        <div class="game-card">
+            <img src="slot-machine.jpg" alt="Slot Machine">
+            <h2>Slot Machines</h2>
+            <p>Spin to win the jackpot and feel the excitement!</p>
+            <button onclick="playSlot()">Play Now</button>
+        </div>
+
+        <div class="game-card">
+            <img src="blackjack.jpg" alt="Blackjack">
+            <h2>Blackjack</h2>
+            <p>Test your skills in the classic game of 21!</p>
+            <button onclick="playBlackjack()">Play Now</button>
+        </div>
+
+        <div class="game-card">
+            <img src="roulette.jpg" alt="Roulette">
+            <h2>Roulette</h2>
+            <p>Bet on your lucky number and watch the wheel spin!</p>
+            <button onclick="playRoulette()">Play Now</button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Casino Royale. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript Functionality -->
+    <script>
+        function playSlot() {
+            alert("Slot machine game is coming soon!");
+        }
+        function playBlackjack() {
+            alert("Blackjack game is coming soon!");
+        }
+        function playRoulette() {
+            alert("Roulette game is coming soon!");
+        }
+    </script>
+</body>
+</html>
